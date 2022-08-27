@@ -28,7 +28,7 @@ class HttpHelper {
 
     http.Response response = await http.get(uri);
 
-    // Convert Json Map to Dart Map
+    // Convert Map into a String
     Map<String, dynamic> data = jsonDecode(response.body);
 
     Weather weather = Weather.fromJson(data);

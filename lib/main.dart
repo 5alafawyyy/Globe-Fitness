@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pluralsight_course_1/screens/bmi_calculator.dart';
 import 'package:pluralsight_course_1/screens/intro_screen.dart';
+import 'package:pluralsight_course_1/screens/session_screen.dart';
 import 'package:pluralsight_course_1/screens/weather_screen.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
 }
 
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': ((context) => const IntroScreen()),
         '/bmi': ((context) => BmiScreen()),
-        '/weather': ((context) => WeatherScreen()),
+        '/weather': ((context) => const WeatherScreen()),
+        '/training': ((context) => const SessionScreen()),
       },
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pluralsight_course_1/screens/bmi_calculator.dart';
 import 'package:pluralsight_course_1/screens/intro_screen.dart';
+import 'package:pluralsight_course_1/screens/session_screen.dart';
 import 'package:pluralsight_course_1/screens/weather_screen.dart';
 
 class MenuDrawer extends StatefulWidget {
@@ -48,34 +49,39 @@ List<Widget> buildMenuItems(BuildContext context) {
 
   Widget screen = Container();
   menuTitles.forEach((String element) {
-    menuItems.add(ListTile(
-      title: Text(
-        element,
-        style: const TextStyle(
-          fontSize: 18.0,
-        ),
-      ),
-      onTap: () {
-        switch (element) {
-          case 'Home':
-            screen = const IntroScreen();
-            break;
-          case 'BMI Calculator':
-            screen = BmiScreen();
-            break;
-          case 'weather':
-            screen = const WeatherScreen();
-            break;
-        }
-        Navigator.pop(context);
-
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: ((context) => screen),
+    menuItems.add(
+      ListTile(
+        title: Text(
+          element,
+          style: const TextStyle(
+            fontSize: 18.0,
           ),
-        );
-      },
-    ));
+        ),
+        onTap: () {
+          switch (element) {
+            case 'Home':
+              screen = const IntroScreen();
+              break;
+            case 'BMI Calculator':
+              screen = BmiScreen();
+              break;
+            case 'Weather':
+              screen = const WeatherScreen();
+              break;
+            case 'Training':
+              screen = const SessionScreen();
+              break;
+          }
+          Navigator.pop(context);
+
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: ((context) => screen),
+            ),
+          );
+        },
+      ),
+    );
   });
   return menuItems;
 }
