@@ -32,8 +32,6 @@ class HttpHelper {
     Map<String, dynamic> data = jsonDecode(response.body);
 
     Weather weather = Weather.fromJson(data);
-
-    print(weather.toString());
     return weather;
   }
 }
