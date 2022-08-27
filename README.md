@@ -1,4 +1,4 @@
-# pluralsight_course_1
+# Flutter framework from scratch
 
 A new Flutter project.
 
@@ -6,11 +6,37 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### Packages used:
+- Http
+- Shared Prefrences
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Widgets covered:
+- Toggle Button
+- ListTile
+- ListView
+- ShowDialog & Alert Dialog
+- Dismissible
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+### Main purposes of this project:
+* Deal with #API using #Http 
+  - Adding and using Http package
+  - Connecting to a web API 
+  - Using Acynchronous Programming
+  - Parsing Json (JavaScript Object Notation)
+  - URL (Universal Resource Identifier) components
+
+
+* Save Data Locally using #Shared Prefrences:
+  - It's easy for storing simole data
+  - Not recommended for Critical data & Large amout of data
+
+
+* Work with new widgets and revise of others:
+  
+
+
+
+
+
+
