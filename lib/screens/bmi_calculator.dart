@@ -3,7 +3,7 @@ import 'package:pluralsight_course_1/shared/menu_bottom_nav.dart';
 import 'package:pluralsight_course_1/shared/menu_drawer.dart';
 
 class BmiScreen extends StatefulWidget {
-  BmiScreen({Key? key}) : super(key: key);
+  const BmiScreen({Key? key}) : super(key: key);
 
   @override
   State<BmiScreen> createState() => _BmiScreenState();

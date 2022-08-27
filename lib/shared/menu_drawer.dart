@@ -48,7 +48,7 @@ List<Widget> buildMenuItems(BuildContext context) {
   );
 
   Widget screen = Container();
-  menuTitles.forEach((String element) {
+  for (var element in menuTitles) {
     menuItems.add(
       ListTile(
         title: Text(
@@ -63,7 +63,7 @@ List<Widget> buildMenuItems(BuildContext context) {
               screen = const IntroScreen();
               break;
             case 'BMI Calculator':
-              screen = BmiScreen();
+              screen = const BmiScreen();
               break;
             case 'Weather':
               screen = const WeatherScreen();
@@ -82,6 +82,6 @@ List<Widget> buildMenuItems(BuildContext context) {
         },
       ),
     );
-  });
+  }
   return menuItems;
 }

@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': ((context) => const IntroScreen()),
-        '/bmi': ((context) => BmiScreen()),
+        '/bmi': ((context) => const BmiScreen()),
         '/weather': ((context) => const WeatherScreen()),
         '/training': ((context) => const SessionScreen()),
       },

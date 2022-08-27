@@ -3,7 +3,6 @@ import 'package:pluralsight_course_1/data/http_helper.dart';
 import 'package:pluralsight_course_1/data/weather.dart';
 import 'package:pluralsight_course_1/shared/menu_bottom_nav.dart';
 import 'package:pluralsight_course_1/shared/menu_drawer.dart';
-import 'package:http/http.dart' as http;
 
 class WeatherScreen extends StatefulWidget {
   const WeatherScreen({Key? key}) : super(key: key);

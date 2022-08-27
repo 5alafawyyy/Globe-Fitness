@@ -117,7 +117,7 @@ class _SessionScreenState extends State<SessionScreen> {
 
   List<Widget> getContent() {
     List<Widget> tiles = [];
-    sessions.forEach((session) {
+    for (var session in sessions) {
       tiles.add(
         Dismissible(
           key: UniqueKey(),
@@ -136,7 +136,7 @@ class _SessionScreenState extends State<SessionScreen> {
           ),
         ),
       );
-    });
+    }
     return tiles;
   }
 

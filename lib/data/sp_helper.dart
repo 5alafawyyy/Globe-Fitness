@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:developer';
 
 import 'package:pluralsight_course_1/data/session.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -33,14 +32,14 @@ class SPHelper {
     /// but List is Ordered
     /// in Shared Prefrences all data is Un Ordered
     Set<String> keys = prefs.getKeys();
-    keys.forEach((String key) {
+    for (var key in keys) {
       if (key != 'counter') {
         Session session = Session.fromJson(
           json.decode(prefs.getString(key) ?? ''),
         );
         sessions.add(session);
       }
-    });
+    }
     return sessions;
   }
 
