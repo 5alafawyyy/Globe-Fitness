@@ -1,4 +1,4 @@
-# Flutter framework from scratch
+# Globe Fitness Application
 
 A new Flutter project. it consists of Weather news & ToDo list and BMI Calculator.
 
